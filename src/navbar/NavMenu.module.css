@@ -1,0 +1,101 @@
+:root 
+{
+    --height : 4rem;
+}
+.navMenu
+{
+    position: relative;
+    height: var(--height);
+    background-color: rgb(158, 182, 235);
+}
+.navList
+{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 15px 0;
+}
+.navLink
+{
+    text-decoration: none;
+    color: black;
+}
+.navLink:hover
+{
+    cursor: pointer;
+}
+.dropDownMenu
+{
+    list-style: none;
+    position: absolute;
+    padding: 10px ;
+    top: var(--height);
+    border-top: 4px solid rgb(110, 154, 248);;
+    background-color: rgb(158, 182, 235);
+}
+.dropDownMenu li
+{
+    padding: 10px;
+    margin: 2px;
+}
+.dropDownLink
+{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+}
+.dropDownMenu li:hover
+{
+    background-color: aliceblue;
+}
+.navToggleBtn
+{
+    display: none;
+}
+.menuBurger
+{
+    padding: 10px;
+}
+.searchIcon
+{
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .navMenu
+    {
+        display: block;
+        height: fit-content;
+    }
+    .navList
+    {
+        display: block;
+        padding:  10px 20px;
+    }
+    .navListHide
+    {
+        display: none;    
+    }
+    .navList li 
+    {
+        padding: 10px 0;
+    }
+    .dropDownMenu
+    {
+    position: relative;
+    padding: 10px;
+    top: 0;
+    border-top: none;
+    background-color: rgb(158, 182, 235);
+    }
+    .navToggleBtn
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+        padding:  20px;
+        background-color: rgb(158, 182, 235);
+    }
+}
