@@ -7,7 +7,7 @@ function NavHeader() {
         <div className={styles.logoCompanyName}>
           <div className={styles.logoContainer}>
             <img
-              src="src\assets\gok.png"
+              src="src\assets\pictures\gok.png"
               alt="logrl logo"
               className={styles.logo}
             />
@@ -19,7 +19,10 @@ function NavHeader() {
           </div>
         </div>
         <div className={styles.contactInfo}>
-          <img className={styles.support} src="src\assets\support.png" />
+          <img
+            className={styles.support}
+            src="src\assets\pictures\support.png"
+          />
           <p className={styles.contactText}>
             Need Help? call us
             <br />
