@@ -1,7 +1,9 @@
+import NavHeader from "./navbar/NavHeader";
+
 function App() {
   return (
     <>
-      <p>Hello Atuya</p>
+      <NavHeader />
     </>
   );
 }
