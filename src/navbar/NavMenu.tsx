@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { GoChevronDown } from "react-icons/go";
 import styles from "./NavMenu.module.css";
 import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
 import { RiSearchLine } from "react-icons/ri";
@@ -44,7 +44,7 @@ function NavMenu() {
               setToggleStudentSubMenu(false);
             }}
           >
-            About us <FaChevronDown />
+            About us <GoChevronDown />
           </div>
           {toggleAboutSubMenu && (
             <ul className={styles.dropDownMenu}>
@@ -95,7 +95,7 @@ function NavMenu() {
               setToggleMediaSubMenu(false);
             }}
           >
-            Student Life <FaChevronDown />
+            Student Life <GoChevronDown />
           </div>
           {toggleStudentSubMenu && (
             <ul className={styles.dropDownMenu}>
@@ -136,7 +136,7 @@ function NavMenu() {
               setToggleStudentSubMenu(false);
             }}
           >
-            Media Desk <FaChevronDown />
+            Media Desk <GoChevronDown />
           </div>
           {toggleMediaSubMenu && (
             <ul className={styles.dropDownMenu}>
