@@ -4,12 +4,18 @@ import styles from "./NavMenu.module.css";
 import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
 import { RiSearchLine } from "react-icons/ri";
 import SearchModal from "./SearchModal";
+import { openSearchModal } from "./searchSlice";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../store";
 
 function NavMenu() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleAboutSubMenu, setToggleAboutSubMenu] = useState(false);
   const [toggleStudentSubMenu, setToggleStudentSubMenu] = useState(false);
   const [toggleMediaSubMenu, setToggleMediaSubMenu] = useState(false);
+
+  const dispatch: AppDispatch = useDispatch();
+  const openSearch = () => dispatch(openSearchModal());
 
   return (
     <div className={styles.navMenu}>
@@ -21,7 +27,7 @@ function NavMenu() {
           {toggleMenu ? <AiOutlineClose /> : <AiOutlineMenuUnfold />}
         </div>
         <div className={styles.searchIcon}>
-          <RiSearchLine />
+          <RiSearchLine onClick={openSearch} />
           <SearchModal />
         </div>
       </div>
