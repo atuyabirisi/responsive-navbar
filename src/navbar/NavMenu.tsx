@@ -5,11 +5,10 @@ import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
 import { RiSearchLine } from "react-icons/ri";
 
 function NavMenu() {
+  const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleAboutSubMenu, setToggleAboutSubMenu] = useState(false);
   const [toggleStudentSubMenu, setToggleStudentSubMenu] = useState(false);
   const [toggleMediaSubMenu, setToggleMediaSubMenu] = useState(false);
-
-  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <div className={styles.navMenu}>
