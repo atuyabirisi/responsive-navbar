@@ -3,6 +3,7 @@ import { GoChevronDown } from "react-icons/go";
 import styles from "./NavMenu.module.css";
 import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
 import { RiSearchLine } from "react-icons/ri";
+import SearchModal from "./SearchModal";
 
 function NavMenu() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -21,6 +22,7 @@ function NavMenu() {
         </div>
         <div className={styles.searchIcon}>
           <RiSearchLine />
+          <SearchModal />
         </div>
       </div>
       <ul
